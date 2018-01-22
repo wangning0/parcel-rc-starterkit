@@ -3,7 +3,7 @@
 > 基于parcel的react component脚手架工具
 
 
-暂未发不到 npm 包  处于测试阶段
+暂未发布到 npm 包  处于测试阶段
 
 暂时使用规则：
 
