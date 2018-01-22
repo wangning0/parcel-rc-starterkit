@@ -1,18 +1,29 @@
 {
   "name": "parcel-rc-starterkit",
   "version": "1.0.0",
-  "description": "",
+  "description": "parcel react component starterkit",
   "main": "index.js",
+  "bin": {
+    "parcel-rc-starterkit": "./bin/cli",
+    "prs": "./bin/cli"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangning0/parcel-rc-starterkit"
+  },
   "keywords": [],
-  "author": "",
+  "author": "wangning",
   "license": "ISC",
   "dependencies": {
     "download": "^6.2.5",
     "fs-extra": "^5.0.0",
     "shelljs": "^0.8.1",
     "yargs": "^10.1.1"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
   }
 }
