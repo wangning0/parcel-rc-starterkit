@@ -10,8 +10,9 @@ module.exports = {
     compare_versions: (versions, compared_versions) => {
         const v = versions.split('.');
         const c_v = compared_versions.split('.');
+        console.log(v, c_v);
         for(let i = 0; i < v.length; i++) {
-            if (~~v[i] > ~~c_v[i]) {
+            if (~~v[i] >= ~~c_v[i]) {
                 return true;
             } else {
                 return false;
