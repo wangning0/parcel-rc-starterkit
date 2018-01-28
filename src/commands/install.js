@@ -51,7 +51,7 @@ function check_env() {
     }
     // 使用async node版本 >= 7.6
     const node_version = shell.exec('node -v', { silent: true }).slice(1);
-    if(!utils.compare_versions(node_version, '7.6')) {
+    if(!utils.compare_versions(node_version, '8.0')) {
         utils.error('node版本需大于v7.6版本');
         return false;
     }
