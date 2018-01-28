@@ -49,7 +49,7 @@ function check_env() {
         utils.error('需要 node 和 npm 环境');
         return false;
     }
-    // 使用async node版本 >= 7.6 parcel 要求大于版本大于8
+    // parcel 要求node版本大于 v8
     const node_version = shell.exec('node -v', { silent: true }).slice(1);
     if(!utils.compare_versions(node_version, '8.0')) {
         utils.error('node版本需大于v7.6版本');
